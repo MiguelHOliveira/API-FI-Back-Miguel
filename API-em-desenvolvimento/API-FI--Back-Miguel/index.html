@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Sistema Prova</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="employee-api/package-lock.json"></script>
+    <script type="text/javascript" src="employee-api/package.json"></script>
+</head>
+
+<body>
+    <div id="nav">
+        Sistema de Cadastro de Funcionário
+    </div>
+    <section id="table">
+        <form action="script-employee.sql" method="POST">
+            <div id="input-data">
+                <input id="nome" class="input-text" placeholder="Nome" type="text" required />
+                <input id="email" class="input-text" placeholder="E-mail" type="email" required />
+                <input id="telefone" class="input-text" placeholder="Telefone" type="number" required />
+                <input id="cargo" class="input-text" placeholder="Cargo" type="text" required />
+                <input class="input-btn" type="submit" value="Enviar" onclick="return addToTable()" />
+            </div>
+        </form>
+        <table id="myTable">
+            <tr id="0">
+                <th>ID</th>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Telefone</th>
+                <th>Cargo</th>
+                <th>Medida</th>
+            </tr>
+        </table>
+    </section>
+</body>
+
+</html>
